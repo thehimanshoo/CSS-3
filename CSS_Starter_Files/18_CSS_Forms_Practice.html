@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Fancy Forms</title>
+  <script src="https://kit.fontawesome.com/41d1b07aca.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bootstrap/CSS/fontawesome.5.15.3.css">
+  <style>
+      body{
+        font-family: Arial, sans-serif;
+      }
+
+      /*---------- Login Form ----------*/
+
+      .login-div{
+        background: linear-gradient(135deg,darkred,darkslategray);
+        box-shadow: 0 0 10px black;
+        width: 300px;
+        padding: 20px;
+        color: whitesmoke;
+        border-radius: 10px;
+      }
+
+      /*---------- Form Head ----------*/
+
+      .login-div h2{
+        text-align: center;
+        font-family:"Comic Sans MS", sans-serif;
+        font-size: 35px;
+        text-shadow: 0 5px 10px black;
+      }
+
+
+      /*---------- Form Body ----------*/
+
+      .form-group label{
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+      }
+      .form-group input[type="text"],
+      .form-group input[type="number"],
+      .form-group input[type="email"],
+      .form-group input[type="password"],
+      .form-group textarea{
+        font-size: 18px;
+        height: 35px;
+        width: 280px;
+        outline: none;
+        border-radius: 5px;
+      }
+      .form-group input[type="text"]:focus,
+      .form-group input[type="number"]:focus,
+      .form-group input[type="email"]:focus,
+      .form-group input[type="password"]:focus,
+      .form-group textarea:focus{
+        background:linear-gradient(180deg,orangered,lightgray);
+        color:black;
+      }
+      .form-group select{
+        font-size: 14px;
+        width: 200px;
+        height: 28px;
+      }
+
+      /*---------- Form Bottom ----------*/
+
+      .form-group input[type="submit"]{
+        margin-left: 90px;
+        font-size: 18px;
+        padding: 10px 25px;
+        text-align: center;
+      }
+      .submit-button{
+        margin-top: 50px;
+        background: linear-gradient(135deg,darkred,black);
+        color: whitesmoke;
+        border: none;
+        border-radius: 5px;
+      }
+      .submit-button:hover{
+        box-shadow: 0 0 10px black;
+        cursor: pointer;
+      }
+  </style>
+</head>
+<body>
+
+    <!------ Login Form ------>
+
+    <div class="login-div">
+      <h2 class="form-head">Login Here</h2>
+      <form action="" class="login-form">
+           <div class="form-group">
+             <label for="">User Name</label>
+             <input type="text" placeholder="User Name">
+           </div>
+
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+          <label for="">Password</label>
+          <input type="password" placeholder="Password">
+        </div>
+
+        <div class="form-group">
+          <label for="">Mobile Number</label>
+          <input type="number" placeholder="Enter your Mob. Number">
+        </div>
+
+        <div class="form-group">
+          <label for="">Address</label>
+          <textarea name="" id="" cols="00" rows="1" placeholder="Enter Your Address"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="">Designation</label>
+          <select name="" id="">
+            <option value="">Select Designation</option>
+            <option value="">Software Engineer</option>
+            <option value="">Sr.Software Engineer</option>
+            <option value="">Tech Lead</option>
+            <option value="">Project Manager</option>
+          </select>
+        </div>
+
+        <!------ Form Bottom ------>
+
+        <div class="form-group">
+          <input type="submit" value="Submit" class="submit-button">
+        </div>
+      </form>
+    </div>
+
+
+</body>
+</html>

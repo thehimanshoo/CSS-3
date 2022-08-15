@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Animation</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        .simple{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: limegreen;
+            border: 20px solid green;
+            box-shadow: 0 0 10px black;
+            animation: simple 2s infinite linear;
+        }
+        @keyframes simple {
+            0%,50%,100%{
+                background-color: limegreen;
+                border-color: green;
+            }
+            25%,75%{
+                background-color: green;
+                border-color: limegreen;
+            }
+        }
+
+        .spin{
+            width: 100px;
+            height: 100px;
+            background:linear-gradient(45deg, aqua,darkslategray,blue);
+            border-top: 40px solid blue;
+            border-bottom: 40px solid deepskyblue;
+            border-radius: 50%;
+            border-left: 20px solid darkred;
+            border-right: 20px solid red;
+            box-shadow: 0 0 10px black;
+            animation: spin 2s infinite linear 0s;
+        }
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            20%{
+                transform: rotate(80deg);
+            }
+           60%{
+                transform: rotate(100deg);
+            }
+           80%{
+                transform: rotate(2500deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .news{
+            background-color: darkred;
+            color: white;
+            padding: 10px;
+            border: 20px solid #f65a5a;
+            box-shadow: 0 0 10px black;
+            overflow: hidden;
+        }
+        .news p{
+            margin: 0;
+            animation: news 9s infinite linear 0s;
+            font-family: "Comic Sans MS"sans-serif;
+            font-size: 25px;
+        }
+        @keyframes news {
+            0%{
+                transform:translateX(100%) ;
+            }
+            100%{
+                transform:translateX(-100%) ;
+            }
+        }
+        .box{
+            width: 130px;
+            height: 130px;
+            background: linear-gradient(45deg,black,darkred);
+            margin-bottom: 300px;
+            position: relative;
+            animation: move 4s infinite linear 0s;
+        }
+        @keyframes move {
+           0%{
+              top: 0;
+               left: 0;
+               border-radius: 50% 0 0 0;
+           }
+            25%{
+                top: 0;
+                left: 400px;
+                border-radius: 50% 0 50% 0;
+            }
+            50%{
+                top: 250px;
+               left: 400px;
+                border-radius: 50% 50% 50% 0;
+            }
+            75%{
+                top: 250px;
+                left: 0;
+                border-radius: 50%
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+        .football{
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 0 0 10px black;
+            background: no-repeat url("../CSS_Starter_Files/img/football image 2.png");
+            background-size: cover;
+            margin-bottom: 400px;
+            position: relative;
+            animation: ball 10s infinite linear 0s;
+        }
+        @keyframes ball {
+           0%{
+               top: 0;
+           }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CSS_02_Gadget Animation -->
+        ---------------
+    <!-- CSS_02_Gadget Animation has five property to apply for a proper design & that is:-
+         1. Animation-name:
+         2. Animation-duration:
+         3. Animation-iteration-count: 1, infinite
+         4. Animation-timing-function: linear, ease-in, ease-out, ease-in-out
+         5. Animation-delay:
+
+    * Shortcut to apply these all properties in a single line
+        *=> animation:name duration iteration-count timing-function delay;
+     -->
+
+    <h3>Simple Animation</h3>
+    <div class="simple"></div>
+
+    <hr>
+
+    <h3>Spin Animation</h3>
+    <div class="spin"></div>
+
+    <hr>
+
+    <h3>News Animation</h3>
+    <div class="news">
+        <p>Latest News: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptatibus?</p>
+    </div>
+
+    <hr>
+
+    <!-- Box Animation -->
+    <h3>Box Animation</h3>
+    <div class="box"></div>
+
+    <hr>
+
+    <!-- Foot Ball Animation -->
+    <h3>Foot Ball Animation</h3>
+    <div class="football"></div>
+    <hr>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Flex Box</title>
+    <style>
+        body{
+            margin-bottom: 300px;
+        }
+
+        .audio{
+            background: linear-gradient(45deg,black,darkred);
+            margin-bottom: 50px;
+        }
+
+        /*---------- Head Section of Flex Box ----------*/
+
+        div h1{
+            font-family:Arial, sans-serif;
+            background: linear-gradient(180deg,orange,white,darkgreen);
+            padding: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 50px;
+            color: limegreen;
+            text-shadow: 0 0 5px black;
+        }
+        div .flex{
+            color: orangered;
+            text-shadow: 0 0 5px black;
+        }
+        div .box{
+            text-shadow: 0 5px 10px black;
+            color: white;
+        }
+        div .example{
+            color: limegreen;
+            text-shadow: 0 0 5px black;
+        }
+
+        /*---------- Body Section of Flex Box ----------*/
+        .container{
+            background: lightgreen;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        .container h1{
+            background: linear-gradient(45deg,black,red);
+            color: white;
+            font-family: Arial, sans-serif;
+             text-align: center;
+            padding: 5px;
+            margin: 10px;
+            flex: 1;
+        }
+
+        /*---------- Flex as a Side-Bar ----------*/
+
+        .container-flex {
+            background-color: lightsalmon;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+        }
+        .container-flex h1{
+            background: linear-gradient(45deg,black,blue);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+            color: white;
+        }
+        .container-flex h1:nth-child(1){
+            flex: 1;
+        }
+        .container-flex h1:nth-child(2){
+            flex: 4;
+        }
+
+        /*---------- Flex Wrap ----------*/
+
+        .container-wrap{
+            background: lightgreen;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .container-wrap h1{
+            background: linear-gradient(45deg,black,red);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+            flex: 1;
+        }
+
+        /*---------- Flex no-wrap ----------*/
+
+        .container-no-wrap{
+            background: linear-gradient(45deg,black,deepskyblue);
+            color: white;
+            text-shadow: 0 0 10px black;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap:nowrap;
+        }
+        .container-no-wrap h2{
+            color: white;
+            background: linear-gradient(45deg,hotpink,lightgreen);
+            padding: 10px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <! Media For Personal Use -->
+
+    <audio src="../Media/Coolar%20Kurti%20Me%20Laga%20La(BhojpuriWap.In).mp3" controls typeof="audio" class="audio"></audio>
+
+    <!--- Flex Box Concept -->
+
+    <div>
+        <h1>
+            <span class="flex">Flex</span>
+            <span class="box">Box</span>
+            <span class="example">Example</span> :-
+        </h1>
+    </div>
+
+    <div class="container">
+        <h1>Item 1</h1>
+        <h1>Item 2</h1>
+        <h1>Item 3</h1>
+        <h1>Item 4</h1>
+    </div>
+
+    <!---------- Flex as a Side-Bar ---------->
+
+    <div class="container-flex">
+        <h1>Item 1</h1>
+        <h1>Item 2</h1>
+    </div>
+
+    <!---------- Flex Wrap ---------->
+
+    <div>
+        <h1>
+            <span class="flex">Flex</span>
+            <span class="box">Box</span>
+            <span class="example">Wrap</span> :-
+        </h1>
+    </div>
+
+    <div class="container-wrap">
+        <h1>Item 1</h1>
+        <h1>Item 2</h1>
+        <h1>Item 3</h1>
+        <h1>Item 4</h1>
+        <h1>Item 5</h1>
+        <h1>Item 6</h1>
+        <h1>Item 7</h1>
+        <h1>Item 8</h1>
+        <h1>Item 9</h1>
+        <h1>Item 10</h1>
+        <h1>Item 11</h1>
+        <h1>Item 12</h1>
+        <h1>Item 13</h1>
+        <h1>Item 14</h1>
+        <h1>Item 15</h1>
+        <h1>Item 16</h1>
+        <h1>Item 17</h1>
+        <h1>Item 18</h1>
+        <h1>Item 19</h1>
+        <h1>Item 20</h1>
+        <h1>Item 21</h1>
+        <h1>Item 22</h1>
+        <h1>Item 23</h1>
+        <h1>Item 24</h1>
+    </div>
+
+    <!---------- Flex no-wrap ---------->
+
+    <div>
+        <h1>
+            <span class="flex">Flex</span>
+            <span class="box">no-</span>
+            <span class="example">wrap</span> :-
+        </h1>
+    </div>
+
+    <div class="container-no-wrap">
+        <h2>Item 1</h2>
+        <h2>Item 2</h2>
+        <h2>Item 3</h2>
+        <h2>Item 4</h2>
+        <h2>Item 5</h2>
+        <h2>Item 6</h2>
+        <h2>Item 7</h2>
+        <h2>Item 8</h2>
+        <h2>Item 9</h2>
+        <h2>Item 10</h2>
+        <h2>Item 11</h2>
+        <h2>Item 12</h2>
+        <h2>Item 13</h2>
+        <h2>Item 14</h2>
+        <h2>Item 15</h2>
+        <h2>Item 16</h2>
+        <h2>Item 17</h2>
+        <h2>Item 18</h2>
+
+    </div>
+</body>
+</html>

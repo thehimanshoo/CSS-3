@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <script src="https://kit.fontawesome.com/41d1b07aca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/CSS/fontawesome.5.15.3.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        /*------------------ Form Head ------------------*/
+
+
+        .login-div{
+            background: linear-gradient(115deg,maroon,black);
+            box-shadow: 0 0 10px black;
+            color: white;
+            width: 300px;
+            padding: 10px;
+        }
+        .login-div h2{
+            text-align: center;
+        }
+        .login-form label{
+            border-radius: 0px;
+        }
+
+        /*------------------ Form body ------------------*/
+
+
+        .form-group label{
+
+            font-size: 18px;
+            display: block;
+            padding: 12px 0;
+        }
+        .form-group input[type=text]{
+            height: 30px;
+        }
+        .form-group-address label{
+            display: block;
+            padding:10px 0;
+        }
+        .form-group-address textarea{
+            display: block;
+            margin-top: 5px;
+        }
+
+        /*------------------ Form Bottom ------------------*/
+
+
+        .submit-button input{
+            background: linear-gradient(45deg,red,black);
+            color: white;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-left: 95px;
+            padding: 10px 20px;
+        }
+        .submit-button input:hover{
+            box-shadow: 0 0 10px black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-------------------- Login Form -------------------->
+
+   <div class="login-div">
+       <h2>Login Here</h2>
+       <form action="" class="login-form">
+           <div class="form-group">
+               <label for="">User Name</label>
+               <input type="text" placeholder="User Name">
+           </div>
+
+           <div class="form-group">
+               <label for="">Email</label>
+               <input type="email" placeholder="Enter your email here">
+           </div>
+
+           <div class="form-group">
+               <label for="">Password</label>
+               <input type="password" placeholder="Password">
+           </div>
+           <div class="form-group">
+               <label for="">Mobile Number</label>
+               <input type="number" placeholder="Enter your mobile number">
+           </div>
+
+           <div class="form-group-address">
+               <label for="">Address</label>
+               <textarea name="" id="" cols="21" rows="03" placeholder="Enter full address" maxlength="200"></textarea>
+           </div>
+
+           <div class="form-group">
+               <label for="">Designation</label>
+               <select>
+                   <option value="">Designation</option>
+                   <option value="">Software Engineer</option>
+                   <option value="">Sr.Software Engineer</option>
+                   <option value="">Tech Lead</option>
+                   <option value="">Project Manager</option>
+               </select>
+           </div>
+
+           <div class="submit-button">
+               <input type="submit" value="Submit">
+           </div>
+       </form>
+
+   </div>
+</body>
+</html>

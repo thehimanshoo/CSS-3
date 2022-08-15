@@ -1,0 +1,183 @@
+
+    /*---------- Main Header Style ----------*/
+
+        body {
+            margin: 0;
+        }
+    body{
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+        margin-bottom: 200px;
+    }
+    .main-header{
+        background: white url("../img/image1.jpg") no-repeat scroll top;
+        text-align: right;
+        color: white;
+        padding: 12px;
+        box-shadow: 0 0 10px black;
+        text-shadow: 0 0 10px red;}
+
+    /*---------- Main Navbar Style ----------*/
+
+    .main-nav{
+        background-color: black;
+        box-shadow: 0 0 10px black;
+    }
+    .main-nav a{
+        color: white;
+        text-decoration: none;
+        padding: 5px 25px;
+        display: inline-block;
+    }
+    .main-nav a:hover{
+        background: linear-gradient(45deg,black,#935348);
+        box-shadow: 0 0 5px white;
+        border-radius: 50px;
+    }
+    .main-nav a.active{
+        background: linear-gradient(45deg,black,red);
+        text-shadow: 0 0 5px black;
+        border-radius: 50px;
+    }
+
+    /*---------- Main Content Section ----------*/
+
+    .main-content-section{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .main-content-article{
+        border: 2px solid red;
+        border-radius: 30px 0 30px 0;
+        width: 330px;
+        height: 500px;
+        display: inline-grid;
+        margin: 5px;
+        transition: all 0.5s;
+    }
+    .main-content-article:hover{
+        box-shadow: 0 0 10px red;
+        width: 340px;
+        cursor: pointer;
+    }
+    .main-content-article h2{
+        text-align: center;
+        color: white;
+        text-shadow: 0 5px 10px blue;
+        font-size: 30px;
+    }
+    .main-content-article img{
+        width: 100%;
+        height: 250px;
+    }
+    .main-content-text{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /*---------- Main News Section ----------*/
+
+    .main-news-section{
+        width: 80%;
+        margin: auto;
+    }
+    .main-news-article{
+        box-shadow: 0 0 10px darkred;
+        border-radius: 10px;
+        background-color: #fad3c9;
+    }
+    .main-news-article h2{
+        background: linear-gradient(45deg,darkslategrey,#935348);
+        text-align: center;
+        color: white;
+        padding: 20px;
+        border-radius: 10px 10px 0 0;
+    }
+    .zoom{
+        width: 600px;
+        height: 350px;
+        margin: auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .zoom img{
+        width: inherit;
+        height: inherit;
+        border-radius: 10px;
+        transition: all 0.5s;
+        opacity: 0.8;
+    }
+    .zoom:hover img{
+        transform: scale(1.2, 1.2);
+        cursor: pointer;
+        opacity: 1;
+    }
+    .main-news-text{
+        font-size: 20px;
+        text-align: center;
+        padding: 15px;
+    }
+
+
+    /*---------- Main Footer ----------*/
+
+    .main-footer{
+        background: linear-gradient(45deg, lightsalmon,black,lightsalmon);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border-radius: 50%;
+        margin-top: 80px;
+        text-shadow: 0 0 10px blue;
+    }
+    .main-footer h2{
+        margin: 0;
+    }
+    .main-footer p{
+        margin: 0;
+    }
+    .main-footer a{
+        text-decoration: none;
+        color: orangered;
+        font-family: "Comic Sans MS", sans-serif;
+        font-size: 30px;
+        width: 600px;
+    }
+
+    /*---------- Gallery Section ----------*/
+    .gallery-section{
+        text-align: center;
+        margin: 20px 0;
+    }
+    .gallery-figure{
+        border: 2px solid darkred;
+        width: 300px;
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px 5px 0 0;
+    }
+    .gallery-figure:hover{
+        box-shadow: 0 0 10px darkred;
+    }
+    .gallery-zoom{
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .gallery-zoom img{
+        width: inherit;
+        height: inherit;
+        border-radius: 5px 5px 0 0;
+        transition: all 0.7s;
+    }
+    .gallery-zoom:hover img{
+        transform: scale(1.2,1.2);
+        cursor: pointer;
+    }
+    .gallery-figure figcaption{
+        background: linear-gradient(45deg,darkslategrey,#935348);
+        color: white;
+        padding: 5px;
+        margin-top: -7px;
+    }

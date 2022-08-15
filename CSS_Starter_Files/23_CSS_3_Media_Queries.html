@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Media Queries</title>
+    <style>
+        h1{
+            font-size: 40px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            text-shadow: 0 0 10px black;
+            color: white;
+            margin-bottom: 60px;
+        }
+        h2{
+            font-size: 30px;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-shadow: 0 0 10px black;
+            text-align: center;
+            display: none;
+        }
+
+        /*---------- Mobile Screen ----------*/
+
+        @media (max-width: 500px) {
+            body{
+                background: linear-gradient(45deg,black,red);
+            }
+            div h2:nth-child(1){
+                display: block;
+            }
+        }
+
+        /*---------- Tablet Screen ----------*/
+
+        @media (min-width: 501px) and (max-width: 700px) {
+            body{
+                background: linear-gradient(45deg,black,blue);
+            }
+            div h2:nth-child(2){
+                display: block;
+            }
+        }
+
+        /*---------- Laptop Screen ----------*/
+
+        @media (min-width: 701px) and (max-width: 1000px) {
+            body{
+                background: linear-gradient(45deg,black,blueviolet);
+            }
+        }
+        div h2:nth-child(3){
+            display: block;
+        }
+
+        /*---------- X-Large Screen ----------*/
+
+        @media (min-width: 1001px) {
+            body{
+                background: linear-gradient(45deg,black,greenyellow);
+            }
+            div h2:nth-child(4){
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+        <!-- Media Queries (Responsiveness / Liquid Design)
+            ---------------
+            Media  query is a concept of when you develop a Website then, We all knows that every body who gonna opens your
+            Website not gonna open in a same screen-size it can be different for different Person.. For ex:-
+            Someone Opens your website in a Laptop, some open it in a Tablet, Some open it in a Mobile and
+            again some may be open your site on a x-Large Screen like on Projector..
+            so for each section the Display-Size is changing so, here what you have to do is
+            you will have to give the attribute for all different section so that they look like the same
+            Either you open it in a small screen or on a X-Large screen the format will be the same so,that it
+            looks good. For that Concept Media-Queries Concept is generally used to maintains the views same of
+            different screen..
+                    Attribute for applying media-query concept is :-
+                    @media (min-width: some px) and (max-length: some px){}  -->
+
+
+        <h1>Screen Size: <span id="screen"></span></h1>
+        <div>
+            <h2>Mobile Screen</h2>
+            <h2>Tablet Screen</h2>
+            <h2>Laptop Screen</h2>
+            <h2>X-Large Screen</h2>
+        </div>
+
+s
+        <script>
+            window.addEventListener('resize',function () {
+                let screenSize = window.innerWidth;
+                document.querySelector('#screen').innerText = '${screenSize} px';
+            });
+        </script>
+</body>
+</html>

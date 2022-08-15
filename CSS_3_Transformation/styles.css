@@ -1,0 +1,148 @@
+    body{
+        font-family: Arial,sans-serif;
+    }
+    section{
+        background-color: lightgrey;
+        padding: 15px;
+        margin: 15px;
+        text-align: center;
+    }
+    section article{
+        background: linear-gradient(45deg,black,darkblue);
+        color: white;
+        padding: 15px;
+        margin: 10px;
+        width: 200px;
+        display: inline-block;
+        font-size: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px black;
+        transition: all 0.5s;
+    }
+
+
+    /*--------------- Transformation 1 ---------------*/
+
+    /*--- To get Transition effect you will have to mention the same color attribute to the both, it means
+          If you give the background color for your box is "Combination of color" means linear-gradient,
+          then you'll have to give the same attribute for hover effect, not the color will be same only the
+          combination attribute will be the same.. OR If you give the "background-color" attribute to apply
+          background color to your box then always make sure that you'll have to give the same background-color
+          attribute for the hover effect.. --->
+    --*/
+
+                /*----------Head Section ----------*/
+
+    .figure{
+        box-shadow: 2px 5px 15px black;
+        width: 500px;
+        height: 300px;
+        margin: auto;
+        border-radius: 10px;
+        text-align:left;
+        position: relative;
+        overflow: hidden;
+    }
+    .figure img{
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        transition:all 0.5s linear 0s;
+    }
+    .figure:hover img{
+        transform:scale(1.2,1.2);
+        cursor: pointer;
+    }
+    .figure .content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+        color: yellow;
+        width: 50%;
+        height: 100%;
+        font-size: 16px;
+        text-align: center;
+        transform: perspective(400px) rotateY(90deg);
+        transform-origin: left;
+        transition: all 0.9s linear 0s;
+    }
+    .figure:hover .content{
+        transform: perspective(400px) rotateY(0deg);
+    }
+
+                 /*----------Body Section ----------*/
+    .trans-1:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: translateX(10px);
+    }
+    .trans-2:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: translateX(-20px);
+    }
+
+    .trans-3:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: translateY(20px);
+    }
+    .trans-4:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: translateY(-20px);
+    }
+
+    /*--------------- Transformation 2 ---------------*/
+
+    /*__This is a 2Dimensional move in which value of "Skew"
+          always should be in degree__*/
+
+    .trans-5:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: skew(20deg);
+    }
+    .trans-6:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: skewX(20deg);
+    }
+    .trans-7:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: skewY(20deg);
+    }
+    .trans-8:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: skew(20deg,30deg);
+    }
+
+    /*--------------- Transformation 3 ---------------*/
+
+    .trans-9:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: scaleX(1.2);
+    }
+    .trans-10:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: scaleY(0.8);
+    }
+    .trans-11:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: scale(1.3,1.3);
+    }
+
+    /*--------------- Transformation 4 ---------------*/
+
+    .trans-12:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: rotate(20deg);
+    }
+
+    .trans-13:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: perspective(400px) rotateX(20deg);
+    }
+    .trans-14:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: perspective(400px) rotateY(-45deg);
+    }
+    .trans-15:hover{
+        background: linear-gradient(45deg,orangered,black);
+        transform: perspective(400px) rotate3d(5,5,5, 45deg);
+    }

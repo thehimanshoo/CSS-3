@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <script src="https://kit.fontawesome.com/41d1b07aca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/CSS/fontawesome.5.15.3.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        /*---------- Login Form ----------*/
+
+        .login-div{
+            background: linear-gradient(135deg,darkred,darkslategray);
+            box-shadow: 0 0 10px black;
+            width: 300px;
+            padding: 20px;
+            color: whitesmoke;
+            border-radius: 10px;
+        }
+
+        /*---------- Form Head ----------*/
+
+        .login-div h2{
+            text-align: center;
+            font-family:"Comic Sans MS", sans-serif;
+            font-size: 35px;
+            text-shadow: 0 5px 10px black;
+        }
+
+
+        /*---------- Form Body ----------*/
+
+        .form-group label{
+            display: block;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="number"],
+        .form-group input[type="email"],
+        .form-group input[type="password"],
+        .form-group textarea{
+            font-size: 18px;
+            height: 35px;
+            width: 280px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+        .form-group input[type="text"]:focus,
+        .form-group input[type="number"]:focus,
+        .form-group input[type="email"]:focus,
+        .form-group input[type="password"]:focus,
+        .form-group textarea:focus{
+            background:linear-gradient(180deg,orangered,lightgray);
+            color:black;
+        }
+        .form-group select{
+            font-size: 14px;
+            width: 200px;
+            height: 28px;
+        }
+
+        /*---------- Form Bottom ----------*/
+
+        .form-group input[type="submit"]{
+            font-size: 18px;
+            padding: 15px 25px;
+            text-align: center;
+        }
+        .submit-button{
+            margin-top: 50px;
+            background: linear-gradient(135deg,darkred,black);
+            color: whitesmoke;
+            border-radius: 5px;
+            width: 280px;
+            border: none;
+        }
+        .submit-button:hover{
+            box-shadow: 0 0 10px black;
+            cursor: pointer;
+        }
+
+
+        /*---------- Login Form-2 ----------*/
+
+        .login-div-2{
+            margin-top: 70px;
+            background: linear-gradient(135deg,darkred,lightgreen,darkred);
+            box-shadow: 0 10px 10px black;
+            width: 300px;
+            padding: 20px;
+            color: Black;
+            border-radius: 10px;
+            margin-bottom: 70px;
+        }
+
+        /*---------- Form Head-2 ----------*/
+
+        .login-div-2 h2{
+            color: limegreen;
+            text-align: center;
+            font-family:"Comic Sans MS", sans-serif;
+            font-size: 35px;
+            text-shadow: 0 5px 10px black;
+        }
+
+
+        /*---------- Form Body-2 ----------*/
+
+        .form-group-2 label{
+            display: block;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+        .form-group-2 input[type="text"],
+        .form-group-2 input[type="number"],
+        .form-group-2 input[type="email"],
+        .form-group-2 input[type="password"],
+        .form-group-2 textarea{
+            font-size: 18px;
+            height: 35px;
+            width: 280px;
+            outline: none;
+            background: transparent;
+            border: none;
+            color: black;
+            border-bottom: 2px solid black;
+        }
+
+        .form-group-2 input[type="text"]:focus,
+        .form-group-2 input[type="number"]:focus,
+        .form-group-2 input[type="email"]:focus,
+        .form-group-2 input[type="password"]:focus,
+        .form-group-2 textarea:focus{
+            background:linear-gradient(180deg,orangered,lightgray);
+            color:black;
+        }
+        .form-group-2 select{
+            font-size: 14px;
+            width: 200px;
+            height: 28px;
+        }
+
+        /*---------- Form Bottom-2 ----------*/
+
+        .form-group-2 input[type="submit"]{
+            font-size: 18px;
+            padding: 10px 25px;
+            text-align: center;
+        }
+        .submit-button-2{
+            margin-top: 50px;
+            background: linear-gradient(135deg,darkred,black);
+            color: whitesmoke;
+            border: none;
+            width: 280px;
+            border-radius: 5px;
+        }
+        .submit-button-2:hover{
+            box-shadow: 0 0 10px white;
+            cursor: pointer;
+        }
+
+
+        /*---------- Login Form-3 ----------*/
+
+        .login-div-3{
+            background: linear-gradient(135deg,darkred,darkslategray);
+            box-shadow: 0 0 10px black;
+            width: 300px;
+            padding: 20px;
+            color: whitesmoke;
+            border-radius: 10px;
+        }
+
+        /*---------- Form Head-3 ----------*/
+
+        .icon-div{
+            text-align: center;
+        }
+        .icon-div .fa{
+            font-size: 100px;
+            background: linear-gradient(45deg,red,black);
+            border: 10px solid red;
+            border-radius: 50%;
+            margin-top: -60px;
+        }
+
+        .login-div-3 h2{
+            text-align: center;
+            font-family:"Comic Sans MS", sans-serif;
+            font-size: 35px;
+            text-shadow: 0 5px 10px black;
+        }
+
+
+        /*---------- Form Body-3 ----------*/
+
+        .form-group-3 label{
+            display: block;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        ::placeholder{
+            Color: white;
+            font-size: 18px;
+        }
+
+        .form-group-3 input[type="text"],
+        .form-group-3 input[type="number"],
+        .form-group-3 input[type="email"],
+        .form-group-3 input[type="password"],
+        .form-group-3 textarea{
+            font-size: 18px;
+            height: 35px;
+            width: 280px;
+            outline: none;
+            background: transparent;
+            border: none;
+            color: #e4b3b3;
+            border-bottom: 2px solid gray;
+            padding: 15px 0;
+        }
+        .form-group-3 input[type="text"]:focus,
+        .form-group-3 input[type="number"]:focus,
+        .form-group-3 input[type="email"]:focus,
+        .form-group-3 input[type="password"]:focus,
+        .form-group-3 textarea:focus{
+            color: #e4b3b3;
+            font-size: 20px;
+        }
+        .form-group-3 select{
+            font-size: 20px;
+            width: 200px;
+            height: 28px;
+        }
+
+        /*---------- Form Bottom-3 ----------*/
+
+        .form-group-3 input[type="submit"]{
+            margin-left: 90px;
+            font-size: 18px;
+            padding: 10px 25px;
+            text-align: center;
+        }
+        .submit-button-3{
+            margin-top: 50px;
+            background: linear-gradient(135deg,darkred,black);
+            color: whitesmoke;
+            border: none;
+            border-radius: 5px;
+        }
+        .submit-button-3:hover{
+            box-shadow: 0 0 10px black;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<!------ Login Form ------>
+
+<div class="login-div">
+    <h2 class="form-head">Login Here</h2>
+    <form action="" class="login-form">
+        <div class="form-group">
+            <label for="">User Name</label>
+            <input type="text" placeholder="User Name">
+        </div>
+
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="">Password</label>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <div class="form-group">
+            <label for="">Mobile Number</label>
+            <input type="number" placeholder="Enter your Mob. Number">
+        </div>
+
+        <div class="form-group">
+            <label for="">Address</label>
+            <textarea name="" id="" cols="00" rows="1" placeholder="Enter Your Address"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="">Designation</label>
+            <select name="" id="">
+                <option value="">Select Designation</option>
+                <option value="">Software Engineer</option>
+                <option value="">Sr.Software Engineer</option>
+                <option value="">Tech Lead</option>
+                <option value="">Project Manager</option>
+            </select>
+        </div>
+
+        <!------ Form Bottom ------>
+
+        <div class="form-group">
+            <input type="submit" value="Submit" class="submit-button">
+        </div>
+    </form>
+</div>
+
+<!------ Login Form-2 ------>
+
+<div class="login-div-2">
+    <h2 class="form-head-2">Login Here</h2>
+    <form action="" class="login-form-2">
+        <div class="form-group-2">
+            <label for="">User Name</label>
+            <input type="text" placeholder="User Name">
+        </div>
+
+        <div class="form-group-2">
+            <label for="">Email</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group-2">
+            <label for="">Password</label>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <div class="form-group-2">
+            <label for="">Mobile Number</label>
+            <input type="number" placeholder="Enter your Mob. Number">
+        </div>
+
+        <div class="form-group-2">
+            <label for="">Address</label>
+            <textarea name="" id="" cols="00" rows="1" placeholder="Enter Your Address"></textarea>
+        </div>
+
+        <div class="form-group-2">
+            <label for="">Designation</label>
+            <select name="" id="">
+                <option value="">Select Designation</option>
+                <option value="">Software Engineer</option>
+                <option value="">Sr.Software Engineer</option>
+                <option value="">Tech Lead</option>
+                <option value="">Project Manager</option>
+            </select>
+        </div>
+
+        <!------ Form Bottom-2 ------>
+
+        <div class="form-group-2">
+            <input type="submit" value="Submit" class="submit-button-2">
+        </div>
+    </form>
+</div>
+
+
+        <!------ Login Form-3 ------>
+
+<div class="login-div-3">
+    <div class="icon-div">
+        <i class="fa fa-user-circle"></i>
+    </div>
+    <h2 class="form-head-3">Login Here</h2>
+    <form action="" class="login-form-3">
+        <div class="form-group-3">
+            <input type="text" placeholder="User Name">
+        </div>
+
+        <div class="form-group-3">
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group-3">
+            <input type="password" placeholder="Password">
+        </div>
+
+        <div class="form-group-3">
+            <input type="number" placeholder="Enter your Mob. Number">
+        </div>
+
+        <div class="form-group-3">
+            <textarea name="" id="" cols="00" rows="1" placeholder="Enter Your Address"></textarea>
+        </div>
+
+        <div class="form-group-3">
+            <select name="" id="">
+                <option value="">Select Designation</option>
+                <option value="">Software Engineer</option>
+                <option value="">Sr.Software Engineer</option>
+                <option value="">Tech Lead</option>
+                <option value="">Project Manager</option>
+            </select>
+        </div>
+
+        <!------ Form Bottom-3 ------>
+
+        <div class="form-group-3">
+            <input type="submit" value="Submit" class="submit-button-3">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

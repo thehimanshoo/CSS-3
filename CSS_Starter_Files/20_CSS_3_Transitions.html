@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Transitions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/CSS/font-awesome.min.css">
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        /*----------Head Section ----------*/
+
+        .figure{
+            box-shadow: 2px 5px 15px black;
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            border-radius: 10px;
+            text-align:left;
+            position: relative;
+            overflow: hidden;
+        }
+        .figure img{
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+            transition:all 0.5s linear 0s;
+        }
+        .figure:hover img{
+            transform:scale(1.2,1.2);
+            cursor: pointer;
+        }
+        .figure .content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.5);
+            color: yellow;
+            width: 50%;
+            height: 100%;
+            font-size: 16px;
+            text-align: center;
+            transform: perspective(400px) rotateY(90deg);
+            transform-origin: left;
+            transition: all 0.9s linear 0s;
+        }
+        .figure:hover .content{
+            transform: perspective(400px) rotateY(0deg);
+        }
+    </style>
+</head>
+<body>
+        <!-- Here is some Function of "CSS_Transition" -->
+        <!-- CSS_02_Gadget Transition (Smooth transformation)
+            ----------------
+
+           1. Transition-name:
+           2. Transition-duration: s, ms
+           3. Transition-timing-function: linear, ease-in, ease-out, ease-in-out
+             * Linear ==> Slow start Slow end,
+             * ease-in ==> Slow start Fast end,
+             * ease-out ==> Fast start Slow end
+             * ease-in-out ==> Fast Start Fast end..
+
+            4. Transition-delay: s, ms -->
+
+        <!-- Shortcut for "CSS_Transition" Property is:--
+          ==> transition : name duration timing-function delay; -->
+
+        <!-------------------------ZOOM SECTION -------------------------->
+
+        <figure class="figure">
+            <img src="../CSS_Starter_Files/img/desert_4.jpg" alt="">
+            <div class="content">
+                <h2>Food Image</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam, consequuntur dolorem doloremque eius impedit inventore magnam molestiae officia porro sed totam. Aspernatur dicta ipsum iusto minus mollitia perspiciatis similique!</div>
+        </figure>
+</body>
+</html>

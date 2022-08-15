@@ -1,0 +1,61 @@
+
+    body{
+        background-color: black;
+    }
+
+    div{
+    margin: 200px;
+    }
+    span{
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    padding: 10px 25px;
+        border-radius: 5px;
+    margin: 5px;
+    color: white;
+        display: inline-block;
+        animation: move 0.99s infinite alternate;
+    }
+    @keyframes move {
+        0%, 100%{
+            transform: translateY(-50px) ;
+        }
+        50%{
+            transform: translateY(50px) ;
+        }
+    }
+    span:nth-child(1){
+        background: linear-gradient(95deg,black,red);
+        box-shadow: 0 10px 15px red;
+        animation-delay: 0.1s;
+    }
+    span:nth-child(2){
+        background: linear-gradient(250deg,black,blue);
+        box-shadow: 0 10px 15px blue;
+        animation-delay: 0.2s;
+    }
+    span:nth-child(3){
+        background: linear-gradient(95deg,black,limegreen);
+        box-shadow: 0 10px 15px limegreen;
+        animation-delay: 0.3s;
+    }
+    span:nth-child(4){
+        background: linear-gradient(95deg,black,deepskyblue);
+        box-shadow: 0 10px 15px deepskyblue;
+        animation-delay: 0.4s;
+    }
+    span:nth-child(5){
+        background: linear-gradient(95deg,black,yellow);
+        box-shadow: 0 10px 15px yellow;
+        animation-delay: 0.5s;
+    }
+    span:nth-child(6){
+        background: linear-gradient(95deg,black,orangered);
+        box-shadow: 0 10px 15px orangered;
+        animation-delay: 0.6s;
+    }
+    span:nth-child(7){
+        background: linear-gradient(95deg,black,teal);
+        box-shadow: 0 10px 15px teal;
+        animation-delay: 0.7s;
+    }

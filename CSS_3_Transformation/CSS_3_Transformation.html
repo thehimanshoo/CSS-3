@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Transformation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <!-- Here is some Function of "CSS_Transition" -->
+        <!-- CSS_02_Gadget Transition (Smooth transformation)
+            ----------------
+
+        1. Transition-name:
+        2. Transition-duration: s, ms
+        3. Transition-timing-function: linear, ease-in, ease-out, ease-in-out
+            * Linear ==> Slow start Slow end,
+            * ease-in ==> Slow start Fast end,
+            * ease-out ==> Fast start Slow end
+            * ease-in-out ==> Fast Start Fast end..
+
+        4. Transition-delay: s, ms -->
+
+        <!-- Shortcut for "CSS_Transition" Property is:--
+        ==> transition : name duration timing-function delay; -->
+
+        <!-------------------------ZOOM SECTION -------------------------->
+
+        <figure class="figure">
+            <img src="../CSS_Starter_Files/img/desert_4.jpg" alt="">
+            <div class="content">
+                <h2>Food Image</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam, consequuntur dolorem doloremque eius impedit inventore magnam molestiae officia porro sed totam. Aspernatur dicta ipsum iusto minus mollitia perspiciatis similique!</div>
+        </figure>
+
+
+      <!----- Transformation ----->
+
+      <!-- For Transformation Effect their were four child element of transformation.. For ex:-
+      1. Move:- Their attribute for applying is {transform:translateX (px, %)} here number could be in both Either Pixel, or % percentage..
+                                                {Transform:translateY (px, %)} (,,)
+                                                {transform:translateXY (X, Y)} here the value of X and Y could be both either in px or in %..
+
+      2. Skew:- Their attribute for applying is {transform:skewX (deg.)} For this the value should be only in degree.
+                                                {transform:skewY (deg.)} (,,)
+                                                {transform:skew (X, Y)} here also both the vlue of X and Y axis should be in deg.
+
+      3. Scale:- Their attribute for applying is {transform: scaleX (1)} here the value should be in form of number in which number denotes the "Times of Zoom of its original shape"..
+                                                 {transform: scaleY (2)} (,,)
+                                                 {transform: scaleXY (X, Y)} here also the value of both the axis X and Y should be in number so that it can zoom the content in both the side..
+
+      4. Rotate:- Their attribute for applying is {transform: rotate(deg)} this is single rotation or 2D rotation and their value should be in Deg.
+                                                  {transform: rotateX(deg)} this is axis rotate and here also the value should be in deg..
+                                                  {transform: rotateXY(deg)} this is double rotation and in this also the value should be in deg..
+                                                  {transform: rotate3D(X,Y,Z)} this is a 3D rotation and here no deg. is required here only you'll have to the numbers
+
+      **To see The better result of Rotate or any other move/Transform apply the special attribute called
+        {transform: perspective (Some value in px) rotateX(value in degree)}-->
+
+        <!----------1. Transformation (Move) --------->
+
+    <section>
+        <h2>Example of Transition:translate at X-axis (+ve)</h2>
+      <article class="trans-1">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+        </article>
+
+      <article class="trans-1">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+        </article>
+
+      <article class="trans-1">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+        </article>
+
+      <article class="trans-1">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+        </article>
+    </section>
+
+      <section>
+          <h2>Example of Transition:translate at X-axis (-ve)</h2>
+          <article class="trans-2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <section>
+          <h2>Example of Transition:translate at Y-axis (+Ve)</h2>
+      <article class="trans-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+        </article>
+
+      <article class="trans-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+        </article>
+
+      <article class="trans-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+        </article>
+
+      <article class="trans-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+        </article>
+    </section>
+
+      <section>
+          <h2>Example of Transition:translate at Y-axis (-Ve)</h2>
+          <article class="trans-4">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-4">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-4">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-4">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <!----------2. Transformation (Skew) --------->
+
+      <section>
+          <h2>Example of 2D Transition:skew(deg.)</h2>
+          <article class="trans-5">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-5">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-5">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-5">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <section>
+          <h2>Example of Transition:skewX(deg.)</h2>
+          <article class="trans-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <section>
+          <h2>Example of Transition:skewY(deg.)</h2>
+          <article class="trans-7">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-7">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-7">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-7">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <section>
+          <h2>Example of Transition:skew(X,Y) value should be in degree</h2>
+          <article class="trans-8">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-8">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-8">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-8">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <!----------3. Transformation (Scale) --------->
+
+      <section>
+          <h2>Example of Transition:Scale at X-axis (2)</h2>
+          <article class="trans-9">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-9">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-9">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-9">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <section>
+          <h2>Example of Transition:translate at Y-axis (2)</h2>
+          <article class="trans-10">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-10">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-10">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-10">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <section>
+          <h2>Example of Transition:Scale(X,Y)</h2>
+          <article class="trans-11">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-11">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-11">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-11">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <!----------4. Transformation (Rotation) value always should be in degree... --------->
+
+      <section>
+          <h2>Example of "2D" Transition:rotate(deg.)</h2>
+          <article class="trans-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <section>
+          <h2>Example of Transition:rotateX (deg.)</h2>
+          <article class="trans-13">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-13">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-13">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-13">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <section>
+          <h2>Example of Transition:rotateXY(deg.)</h2>
+          <article class="trans-14">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-14">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-14">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-14">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+      <section>
+          <h2>Example of "3D" Transition:rotate (X,Y,Z) ..</h2>
+          <article class="trans-15">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-15">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-15">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+
+          <article class="trans-15">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consequatur, delectus dignissimos doloremque earum eius ipsa necessitatibus officiis repellat unde vel, vitae voluptates? Consectetur magnam minima minus quibusdam? Fuga fugiat fugit ipsam natus officiis quidem quisquam similique suscipit, tenetur.</p>
+          </article>
+      </section>
+
+</body>
+</html>
